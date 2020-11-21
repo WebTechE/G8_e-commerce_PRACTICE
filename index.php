@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="home">
+<div class="container" id="main">
+
+<!--  Logo  -->
+    <h1 class="maintitle">
+        <i class="fas fa-store"></i> <br/>G8 E-commerce
+    </h1>
+
+<!--  form  -->
+    <div class="row navigation">
+        <div class="column column-60 column-offset-20">
+            <div class="formaction">
+               <!-- path (index.php, registration.php) -->
+                <a href="#" id="login">Login</a> | <a href="/aiub/registration.php" id="register">Register Account</a>
+            </div>
+            <div class="formc">
+                <form id="form01" method="post" action="tasks.php">
+                    <h3>Login</h3>
+                    <fieldset>
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="Email Address" id="email" name="email">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Password" id="password" name="password">
+                        <input class="button-primary" type="submit" value="Submit">
+                        <input type="hidden" name="action" id="action" value="login">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
